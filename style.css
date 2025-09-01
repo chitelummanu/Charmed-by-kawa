@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #FFD6B3, #FF9DC7);
+    color: #000;
+    padding: 20px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.button span {
+    margin-left: 5px;
+}
+
+.heart {
+    color: #F472A6;
+}
+
+.sparkle {
+    color: #FFE100;
+}
+
+.arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+    background-color: rgba(128, 128, 128, 0.9);
+}
+
+.shape {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #7299f4;
+    border-radius: 50%;
+    top: 100px;
+    right: 0;
+    z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .content {
+        font-size: 1.1rem;
+    }
+    
+    .arrow {
+        width: 60px;
+        height: 60px;
+        right: 15px;
+        bottom: 80px;
+    }
+}
+
